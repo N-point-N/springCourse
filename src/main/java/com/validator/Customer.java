@@ -19,6 +19,17 @@ public class Customer {
     @Email(message = "must contain correct address")
     private String email;
 
+    @CourseCode
+    private String courseCode;
+
+    public String getCourseCode() {
+        return courseCode;
+    }
+
+    public void setCourseCode(String courseCode) {
+        this.courseCode = courseCode;
+    }
+
     public Customer() {
     }
 

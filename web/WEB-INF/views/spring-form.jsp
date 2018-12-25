@@ -39,6 +39,11 @@
                 <form:errors path="email" cssClass="error"/></td>
         </tr>
         <tr>
+            <td>Course code:</td>
+            <td><form:input path="courseCode"/>
+                <form:errors path="courseCode" cssClass="error"/></td>
+        </tr>
+        <tr>
             <td><input type="submit" value="Submit"/></td>
         </tr>
     </table>

@@ -18,5 +18,9 @@
 <div>Cost is: ${customer.cost}</div>
 <hr/><br/>
 <div>Email code is: ${customer.email}</div>
+<br/>
+<hr/>
+<br/>
+<div>Course code is ${customer.courseCode}</div>
 </body>
 </html>
