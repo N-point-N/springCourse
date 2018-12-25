@@ -16,7 +16,7 @@ public class Customer {
     @Max(value = 10, message = "must be less then 10")
     private Integer cost;
 
-    @Pattern(regexp = "^[a-zA-Z0-9]{5}", message = "only 5 chars/digits")
+    @Email(message = "must contain correct address")
     private String email;
 
     public Customer() {

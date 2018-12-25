@@ -11,28 +11,37 @@
 <head>
     <title>Customer form</title>
     <style>
-        .form {margin-left : 100px}
+        .error {
+            color: red
+        }
     </style>
 </head>
 <body>
 <form:form action="/processForm" modelAttribute="customer">
-    <div> First name:
-        <form:input path="firstName" cssClass="form"/>
-        <form:errors path="firstName" cssClass="error"/>
-    </div>
-    <div> Last name:
-        <form:input path="lastName" cssClass="form"/>
-    </div>
-    <div> Cost:
-        <form:input path="cost" cssClass="form"/>
-        <form:errors path="cost" cssClass="error"/>
-    </div>
-    <div> Email code:
-        <form:input path="email" cssClass="form"/>
-        <form:errors path="email" cssClass="error"/>
-    </div>
-    <input type="submit" value="Submit"/>
-
+    <table>
+        <tr>
+            <td>First name:</td>
+            <td><form:input path="firstName"/>
+                <form:errors path="firstName" cssClass="error"/></td>
+        </tr>
+        <tr>
+            <td>Last name:</td>
+            <td><form:input path="lastName"/></td>
+        </tr>
+        <tr>
+            <td>Cost:</td>
+            <td><form:input path="cost"/>
+                <form:errors path="cost" cssClass="error"/></td>
+        </tr>
+        <tr>
+            <td>Email code:</td>
+            <td><form:input path="email"/>
+                <form:errors path="email" cssClass="error"/></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Submit"/></td>
+        </tr>
+    </table>
 </form:form>
 
 </body>
